@@ -366,7 +366,6 @@ body {
 
 .hero-image-wrapper {
   margin-bottom: 2rem;
-  animation: float 3s ease-in-out infinite;
 }
 
 .hero-image {
