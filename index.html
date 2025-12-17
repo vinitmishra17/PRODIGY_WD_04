@@ -3,75 +3,436 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio • Vinit Mishra</title>
+  <title>Vinit Mishra • Web Developer</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<nav>
-  <h2 class="logo">Vinit</h2>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-brand">
+      <span class="brand-name">Vinit Mishra</span>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
 </nav>
 
+<!-- Hero Section -->
 <section id="home" class="hero">
-  <h1>Hi, I'm <span>Vinit Mishra</span></h1>
-  <p>Web Development Intern @ Prodigy InfoTech</p>
-  <a href="#projects" class="btn">View Projects</a>
-</section>
-
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>
-    I am a passionate web development intern with hands-on experience in
-    HTML, CSS, and JavaScript. I enjoy building clean, responsive, and
-    user-friendly web applications.
-  </p>
-</section>
-
-<section id="skills" class="section">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Git & GitHub</span>
-    <span>Responsive Design</span>
+  <div class="hero-bg">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-text fade-in-up">
+      <p class="greeting">Hello, I'm</p>
+      <h1 class="hero-title">
+        <span class="gradient-text">Vinit Mishra</span>
+      </h1>
+      <p class="hero-subtitle">
+        <span class="typing-text">Web Development Intern @ Prodigy InfoTech</span>
+      </p>
+      <p class="hero-description">
+        Crafting beautiful, responsive web experiences with modern technologies
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span>Get In Touch</span>
+        </a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/vinitmishra17" target="_blank" class="social-icon" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vinit-mishra-02321b329/" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:your-email@example.com" class="social-icon" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span></span>
   </div>
 </section>
 
-<section id="projects" class="section">
-  <h2>Projects</h2>
-  <div class="projects">
-    <div class="card">Task 01 – Responsive Landing Page</div>
-    <div class="card">Task 02 – Stopwatch Web App</div>
-    <div class="card">Task 03 – Tic-Tac-Toe Web App</div>
+<!-- About Section -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-tag">Get To Know Me</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div class="about-content">
+      <div class="about-text fade-in-left">
+        <p class="about-paragraph">
+          I am a passionate and dedicated web development intern with hands-on experience in crafting modern, responsive web applications. My journey in web development is driven by a love for clean code, elegant design, and seamless user experiences.
+        </p>
+        <p class="about-paragraph">
+          With expertise in HTML, CSS, and JavaScript, I transform ideas into interactive digital experiences. I believe in continuous learning and staying updated with the latest web technologies and best practices.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <i class="fas fa-code"></i>
+            <h4>Clean Code</h4>
+            <p>Writing maintainable and scalable code</p>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-mobile-alt"></i>
+            <h4>Responsive Design</h4>
+            <p>Mobile-first approach for all devices</p>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-rocket"></i>
+            <h4>Performance</h4>
+            <p>Optimized for speed and efficiency</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="education" class="section">
-  <h2>Education</h2>
-  <p>Currently pursuing Bachelor's degree (Details as applicable)</p>
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-tag">What I Know</span>
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card fade-in-up" data-skill="95">
+        <div class="skill-icon">
+          <i class="fab fa-html5"></i>
+        </div>
+        <h3 class="skill-name">HTML5</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="95"></div>
+        </div>
+        <span class="skill-percentage">95%</span>
+      </div>
+      <div class="skill-card fade-in-up" data-skill="90">
+        <div class="skill-icon">
+          <i class="fab fa-css3-alt"></i>
+        </div>
+        <h3 class="skill-name">CSS3</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="90"></div>
+        </div>
+        <span class="skill-percentage">90%</span>
+      </div>
+      <div class="skill-card fade-in-up" data-skill="85">
+        <div class="skill-icon">
+          <i class="fab fa-js"></i>
+        </div>
+        <h3 class="skill-name">JavaScript</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="85"></div>
+        </div>
+        <span class="skill-percentage">85%</span>
+      </div>
+      <div class="skill-card fade-in-up" data-skill="88">
+        <div class="skill-icon">
+          <i class="fab fa-git-alt"></i>
+        </div>
+        <h3 class="skill-name">Git & GitHub</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="88"></div>
+        </div>
+        <span class="skill-percentage">88%</span>
+      </div>
+      <div class="skill-card fade-in-up" data-skill="92">
+        <div class="skill-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3 class="skill-name">Responsive Design</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="92"></div>
+        </div>
+        <span class="skill-percentage">92%</span>
+      </div>
+      <div class="skill-card fade-in-up" data-skill="80">
+        <div class="skill-icon">
+          <i class="fas fa-palette"></i>
+        </div>
+        <h3 class="skill-name">UI/UX Design</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="80"></div>
+        </div>
+        <span class="skill-percentage">80%</span>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
-  <p>
-    <a href="https://github.com/vinitmishra17" target="_blank">GitHub</a> |
-    <a href="https://www.linkedin.com/in/vinit-mishra-02321b329/" target="_blank">LinkedIn</a>
-  </p>
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-tag">My Work</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card fade-in-up">
+        <div class="project-image">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="View Live">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="View Code">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <h3 class="project-title">Responsive Landing Page</h3>
+          <p class="project-description">
+            A modern, fully responsive landing page featuring smooth animations, parallax effects, and optimized performance across all devices.
+          </p>
+          <div class="project-footer">
+            <span class="project-number">01</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in-up">
+        <div class="project-image">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="View Live">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="View Code">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">HTML5</span>
+          </div>
+          <h3 class="project-title">Stopwatch Web App</h3>
+          <p class="project-description">
+            An interactive stopwatch application with precise timing, lap functionality, and a sleek user interface built with vanilla JavaScript.
+          </p>
+          <div class="project-footer">
+            <span class="project-number">02</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in-up">
+        <div class="project-image">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="View Live">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="View Code">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Game Logic</span>
+            <span class="project-tag">UI/UX</span>
+          </div>
+          <h3 class="project-title">Tic-Tac-Toe Game</h3>
+          <p class="project-description">
+            A classic tic-tac-toe game with AI opponent, smooth animations, win detection algorithm, and responsive grid layout.
+          </p>
+          <div class="project-footer">
+            <span class="project-number">03</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer>
-  <p>© 2025 Vinit Mishra</p>
+<!-- Education Section -->
+<section id="education" class="education-section">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-tag">Academic Background</span>
+      <h2 class="section-title">Education</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item fade-in-left">
+        <div class="timeline-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="timeline-content">
+          <span class="timeline-date">Present</span>
+          <h3 class="timeline-title">Bachelor's Degree</h3>
+          <p class="timeline-description">
+            Currently pursuing Bachelor's degree with focus on Computer Science and Web Development, building strong foundations in programming, algorithms, and modern web technologies.
+          </p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Computer Science</span>
+            <span class="timeline-tag">Web Development</span>
+            <span class="timeline-tag">Software Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-tag">Let's Connect</span>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div class="contact-content">
+      <div class="contact-info fade-in-left">
+        <h3 class="contact-info-title">Let's work together!</h3>
+        <p class="contact-info-text">
+          I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
+        </p>
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-detail-text">
+              <h4>Email</h4>
+              <a href="mailto:your-email@example.com">your-email@example.com</a>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-detail-text">
+              <h4>GitHub</h4>
+              <a href="https://github.com/vinitmishra17" target="_blank">@vinitmishra17</a>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="contact-detail-text">
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/vinit-mishra-02321b329/" target="_blank">Vinit Mishra</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrapper fade-in-right">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>Vinit Mishra</h3>
+        <p>Building the web, one line of code at a time.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://github.com/vinitmishra17" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/vinit-mishra-02321b329/" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:your-email@example.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Vinit Mishra. All rights reserved.</p>
+      <p class="footer-made">Designed & Built with <span class="heart">♥</span> by Vinit</p>
+    </div>
+  </div>
 </footer>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
 
 <script src="script.js"></script>
 </body>
