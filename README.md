@@ -13,6 +13,7 @@
   ## How to Run Locally
     1. Clone:
  git clone https://github.com/vinitmishra17/PRODIGY_WD_04.git
+ 
  2. Open `index.html` in browser
 
 ## Author
