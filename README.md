@@ -8,13 +8,14 @@
 -  Projects
 -  Education
 - Contact
-- ## Tech Stack
+  
+  ## Tech Stack
 -  HTML5, CSS3, JavaScript
-  ## How to Run Locally
-    1. Clone: git clone https://github.com/vinitmishra17/PRODIGY_WD_04.git
- 
+- 
+ ## How to Run Locally
+    1. Clone:git clone https://github.com/vinitmishra17/PRODIGY_WD_04.git
     2. Open `index.html` in browser
-
+    
 ## Author
  Vinit Mishra — Web Development Intern @ Prodigy InfoTech  
  GitHub: https://github.com/vinitmishra17  
